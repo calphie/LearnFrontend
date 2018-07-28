@@ -1,0 +1,42 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "my first project ",
+  "private": true,
+  "dependencies": {
+    "async": "^2.6.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "css-loader": "^1.0.0",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "items-store": "^0.7.0",
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
+    "markdown-loader": "^3.0.0",
+    "null-loader": "^0.1.1",
+    "react": "^16.4.1",
+    "react-hot-loader": "^4.3.4",
+    "react-proxy-loader": "^0.3.5",
+    "react-router": "^4.3.1",
+    "stats-webpack-plugin": "^0.6.2",
+    "style-loader": "^0.21.0",
+    "superagent": "^3.8.3",
+    "url-loader": "^1.0.1",
+    "uuid": "^3.3.2",
+    "webpack": "^4.16.3",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "start": "webpack-dev-server --content-base build/"
+  },
+  "author": "Kenta Utsunomiya",
+  "license": "ISC"
+}
