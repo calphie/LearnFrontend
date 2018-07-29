@@ -1,5 +1,4 @@
 const path = require("path");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     template: __dirname + '/src/index.html',
@@ -21,6 +20,11 @@ module.exports = {
         inline: false,
         contentBase: path.resolve(__dirname, "dist"),
     },
-    module: {},
+    module: {
+        rules: [
+            { test: /\.(js|jsx)$/, exclude: /node_modules/, use: ["babel-loader"] },
+            { test: /\.js$/, exclude:/node_modules/, use:['eslint-loader', 'babel-loader']}
+        ]
+    },
     plugins: [HTMLWebpackPluginConfig]
-}
+};
